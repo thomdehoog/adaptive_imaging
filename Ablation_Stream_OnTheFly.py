@@ -211,4 +211,5 @@ while window_ready == False:
 		window_ready = False
 
 print(exposure_time)
+
 print(delay)
