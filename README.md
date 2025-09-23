@@ -6,7 +6,7 @@ These Python scripts automate laser ablation experiments to infer mechanical pro
 
 ## Scripts Overview
 
-### `Ablation_GFP_Stream_OnTheFly_+0um_Thom.py`
+### `scripts/Ablation_And_Acquisition_OnTheFly_GFP.py`
 This is the primary script for executing laser ablation experiments with synchronized time-lapse imaging. It orchestrates the entire workflow, from pre-ablation imaging to post-ablation monitoring.
 
 **Key Features:**
@@ -32,7 +32,7 @@ This is the primary script for executing laser ablation experiments with synchro
 
 ---
 
-### `OneCut_OnTheFly_BrightField.py` / `OneCut_OnTheFly_GFP.py`
+### `scripts/OneCut_OnTheFly_BrightField.py` / `scripts/OneCut_OnTheFly_GFP.py`
 Quick test scripts for system validation. They perform a single ablation using the current ROI without starting image acquisition, allowing verification of laser alignment and power settings.
 *   Use the `BrightField` version after initial calibration.
 *   Use the `GFP` version to test on fluorescent samples using the 488 laser.
@@ -40,7 +40,7 @@ Quick test scripts for system validation. They perform a single ablation using t
 
 ---
 
-### `AblationOnTheFly_Functions.py`
+### `scripts/AblationOnTheFly_Functions.py`
 A library of core functions imported by the other scripts. It converts user-defined VisiView ROIs (line, rectangle, circle) into optimized pixel coordinate sequences for the laser.
 
 *   **Manual Coordinate Calculation:** The VisiView API does not provide ROI pixel coordinates directly. These functions calculate them manually to enable the "OnTheFly" ablation mode, which is faster and more precise than the standard FRAP functionality.
@@ -49,7 +49,7 @@ A library of core functions imported by the other scripts. It converts user-defi
 
 ---
 
-### `Load_Region_For_DC.py`
+### `scripts/Load_Region_For_DC.py`
 A utility script that loads a saved ROI object (`roi_used_for_dorsal_closure_visiview.rgn`) to ensure the ablation region is consistently sized and positioned for dorsal closure experiments.
 
 ---
