@@ -49,8 +49,8 @@ A library of core functions imported by the other scripts. It converts user-defi
 
 ---
 
-### `scripts/Load_Region_For_DC.py`
-A utility script that loads a saved ROI object (`roi_used_for_dorsal_closure_visiview.rgn`) to ensure the ablation region is consistently sized and positioned for dorsal closure experiments.
+### `scripts/Load_Region.py`
+A script that loads a saved ROI object (`roi_used_for_dorsal_closure_visiview.rgn`) to ensure the ablation region is of consistent size and positioned for experiments.
 
 ---
 
