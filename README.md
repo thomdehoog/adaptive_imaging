@@ -2,6 +2,8 @@
 
 These Python scripts automate laser ablation experiments to infer mechanical properties on cell surfaces during embryo development. They are written in Python 2.7 and designed to run within the IronPython environment of VisiView (v4.1) software, utilizing the VisiView API to control the microscope. The workflow ensures reproducibility and robustness while circumventing limitations within the native software.
 
+<img width="749" height="280" alt="image" src="https://github.com/user-attachments/assets/b26f9d09-5220-4ec6-a147-a9af8221f8df" />
+
 ---
 
 ## Scripts Overview
