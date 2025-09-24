@@ -1,4 +1,4 @@
-# Adaptive Microscopy Scripts for Automated Laser Ablation
+# Adaptive microscopy approach for automation of a laser ablation workflow
 
 These Python scripts automate laser ablation experiments to infer mechanical properties on cell surfaces during embryo development. They are written in Python 2.7 and designed to run within the IronPython environment of VisiView (v4.1) software, utilizing the VisiView API to control the microscope. The workflow ensures reproducibility and robustness while circumventing limitations within the native software.
 
