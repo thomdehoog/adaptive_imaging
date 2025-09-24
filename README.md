@@ -2,9 +2,9 @@
 
 These Python scripts automate laser ablation experiments to infer mechanical properties on cell surfaces during embryo development. They are written in Python 2.7 and designed to run within the IronPython environment of VisiView (v4.1) software, utilizing the VisiView API to control the microscope. The workflow ensures reproducibility and robustness while circumventing limitations within the native software.
 
-<img width="749" height="280" alt="image" src="https://github.com/user-attachments/assets/b26f9d09-5220-4ec6-a147-a9af8221f8df" />
+<img width="730" height="253" alt="image" src="https://github.com/user-attachments/assets/0178023f-a0c4-44dd-a371-7e1f7b855f9d" />
 
----
+This figure illustrates an automated laser ablation experiment measuring the mechanical properties of adherens junctions in a Drosophila embryo. A diagram of the embryo is shown alongside a magnified, time-lapsed view of the junctions before (blue, t=-5s) and after (yellow, t=10s) being severed by a laser at the site indicated by the red cross. This is what the Python scripts automate. A kymograph visualizes the displacement of the junction over time, clearly showing the separation that occurs at t=0s. This displacement is quantified in the graph to the right, which plots the average displacement in micrometers over time from 20 wild-type (WT) experiments, with the shaded area representing the standard deviation. The rapid separation immediately following the laser cut is highlighted as the "initial recoil", which is the most direct (but still indirect) estimation we get of mechanical tension.
 
 ## Scripts Overview
 
