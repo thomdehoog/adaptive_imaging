@@ -32,15 +32,11 @@ This is the primary script for executing laser ablation experiments with synchro
 *   **OnTheFly Exposure:** 10-20ms per pixel, single cycle.
 *   **Optimization Tip:** Test multiple junctions to assess recoil variability and find the optimal power balance. Note that some junctions may not recoil if they are not under tension.
 
----
-
 ### `scripts/OneCut_OnTheFly_BrightField.py` / `scripts/OneCut_OnTheFly_GFP.py`
 Quick test scripts for system validation. They perform a single ablation using the current ROI without starting image acquisition, allowing verification of laser alignment and power settings.
 *   Use the `BrightField` version after initial calibration.
 *   Use the `GFP` version to test on fluorescent samples using the 488 laser.
 *   Both scripts automatically switch to the correct imaging channel if needed.
-
----
 
 ### `scripts/AblationOnTheFly_Functions.py`
 A library of core functions imported by the other scripts. It converts user-defined VisiView ROIs (line, rectangle, circle) into optimized pixel coordinate sequences for the laser.
@@ -49,20 +45,14 @@ A library of core functions imported by the other scripts. It converts user-defi
 *   **Ablation Density Control:** The `skip` parameter allows fine-tuning of ablation density, from complete coverage (`skip=0`) to sparse patterns (`skip=3`) for delicate samples.
 *   **Path Optimization:** Implements serpentine scanning and Bresenham's line algorithm to minimize stage movement and ensure pixel-perfect accuracy.
 
----
-
 ### `scripts/Load_Region.py`
 A script that loads a saved ROI object (`roi_used_for_dorsal_closure_visiview.rgn`) to ensure the ablation region is of consistent size and positioned for experiments.
-
----
 
 ## Downstream Data Analysis
 
 1.  **Kymograph Generation:** Kymographs were generated from image data in Fiji using the **Multi Kymograph** plugin.
 2.  **Data Extraction:** Kymographs were traced by hand using the polygon selection tool, and a custom Fiji macro was used to extract the coordinates.
 3.  **Velocity Calculation:** The initial recoil velocity was determined using R. A monotonically constrained nonparametric regression model was fitted to each experiment's data. An interpolating B-splines function was then used to extract the first-order derivative at the moment of ablation (t=0), yielding the initial recoil velocity.
-
----
 
 ## Hardware and Software Requirements
 
